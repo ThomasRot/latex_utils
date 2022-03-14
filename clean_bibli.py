@@ -45,7 +45,7 @@ def handrepair_booktitle(fields):
             return True
         else:
             print(colored(f"Couldn't update {booktitle}.", "red"))
-            return False
+    return False
 
 
 def repair_booktitle(fields):
@@ -76,8 +76,7 @@ def repair_booktitle(fields):
             print(colored(txt, 'green'))
             fields.update({"booktitle": new_booktitle})
             return True
-        else:
-            return handrepair_booktitle(fields)
+    return handrepair_booktitle(fields)
 
 
 def change_key(bibtex_string, key):
